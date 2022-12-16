@@ -2,6 +2,7 @@
 # wm independent hotkeys
 #
 
+
 # terminal emulator
 super + Return
 	st
@@ -47,6 +48,14 @@ super + q
 # toggle bar
 super + b
 	~/.config/polybar/scripts/togglebar.sh	
+
+# increase\decrease gaps
+super + {minus,equal}
+  bspc config window_gap $(( $(bspc config window_gap) {-,+} 10 ))    
+
+# reset gaps
+super + 0
+  bspc config window_gap 0
 
 # alternate between the tiled and monocle layout
 super + f
