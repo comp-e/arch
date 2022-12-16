@@ -1,0 +1,37 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/arch/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Aliases
+alias ls='ls -hal -lav --color=auto'
+alias vim='nvim'
+alias refresh-audio='pacmd unload-module module-udev-detect && pacmd load-module module-udev-detect'
+alias sudo='sudo ' # Used to alias 'sudo vim' to 'sudo nvim'
+alias gap='bspc config window_gap'
+
+alias compile-dwm='rm -rf config.h && make && sudo make install'
+alias compile-st='rm -rf config.h && make && sudo make install'
+alias compile-dmenu='rm -rf config.h && make && sudo make install'
+# Binds
+bindkey ";5C" forward-word
+bindkey ";5D" backward-word
+# Others
+
+# Prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+zstyle ':vcs_info:git:*' formats '(%F{142}%b%f) '
+
+setopt PROMPT_SUBST
+PROMPT='%F{040}%n%f at %F{166}%m%f in %F{031}${PWD/#$HOME/~}%f ${vcs_info_msg_0_}
+%{$fg_bold[white]%}>%{$reset_color%} '
