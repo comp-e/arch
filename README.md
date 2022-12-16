@@ -3,8 +3,6 @@
 
 # Installation
 
-[(Back to top)](#table-of-contents)
-
 1. Clone the repository
 
 2. Make the scripts `nopasswd.sh` and `install.sh` executable
