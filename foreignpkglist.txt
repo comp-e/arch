@@ -1,0 +1,6 @@
+ani-cli
+fastfetch
+hollywood
+pfetch
+ttf-ms-win10-auto
+yay-git
