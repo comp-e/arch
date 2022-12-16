@@ -1,5 +1,4 @@
 # Dotfiles
-My dotfiles
 
 WMs: dwm, bspwm
 
