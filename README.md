@@ -1,4 +1,11 @@
-# arch
+# Dotfiles
+My dotfiles
+
+WMs: dwm, bspwm
+Terminal: st
+Shell: zsh
+Configs: ~/.config
+         ~/.repos
 
 
 # Installation
