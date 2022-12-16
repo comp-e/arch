@@ -125,5 +125,7 @@ extern char *termname;
 extern unsigned int tabspaces;
 extern unsigned int defaultfg;
 extern unsigned int defaultbg;
+extern float alpha;
+extern float alphaUnfocus;
 extern unsigned int defaultcs;
 extern float alpha;
