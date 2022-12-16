@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "coc-python": ">=1.2.13",
+    "coc-clangd": ">=0.27.0"
+  }
+}
