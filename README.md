@@ -7,8 +7,7 @@ Terminal: st
 
 Shell: zsh
 
-Configs: ~/.config\
-         ~/.repos
+Configs: ~/.config or ~/.repos
 
 
 # Installation
