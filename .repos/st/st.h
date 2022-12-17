@@ -128,4 +128,3 @@ extern unsigned int defaultbg;
 extern float alpha;
 extern float alphaUnfocus;
 extern unsigned int defaultcs;
-extern float alpha;
