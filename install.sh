@@ -5,8 +5,8 @@ pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pkglist.txt))
 
 echo -e "\n\n-- INSTALLING YAY --"
 cd .repos/yay-git/
-make
-make install
+makepkg -si
+cd ../..
 
 echo -e "\n\n-- INSTALLING YAY PACKAGES --"
 yay -S --needed < pkglist.txt
