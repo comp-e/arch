@@ -16,6 +16,9 @@ Configs: ~/.config or ~/.repos
 2. Install required packages with pacman
 `sudo pacman -S xorg xorg-server xorg-xinit`
 
+3. Add user to video group
+`sudo usermod -aG video $(whoami)`
+
 3. Install yay
 
 4. To install suckless software:
@@ -26,7 +29,8 @@ Configs: ~/.config or ~/.repos
 	  `exec dwm`
 5. To install bspwm:
 	* Go to the `.repos/bspwm` directory
-	* Run `bash setup.sh`
+	* Run `sudo bash setup.sh`
 	* Run `bash install.sh`
+	* Run `bash config.sh`
 	* Make `~/.xinitrc` and add the following line:
 	  `exec bspwm`
