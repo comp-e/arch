@@ -13,14 +13,20 @@ Configs: ~/.config or ~/.repos
 
 1. Clone the repository
 
-2. Make the scripts `nopasswd.sh` and `install.sh` executable
-  ```
-  chmod +x nopasswd.sh
-  chmod +x install.sh
-  ```
+2. Install required packages with pacman
+`sudo pacman -S xorg xorg-server xorg-xinit`
 
-3. Run the scripts 
-  ```
-  ./nopasswd.sh
-  ./install.sh
-  ```
+3. Install yay
+
+4. To install suckless software:
+	* Go to the `.repos/` directory and cd into `dwm/`, `st/` or `dmenu/` directories.
+	* Run `make`
+	* Run `sudo make install`
+	* Make `~/.xinitrc` and add the following line:
+	  `exec dwm`
+5. To install bspwm:
+	* Go to the `.repos/bspwm` directory
+	* Run `bash setup.sh`
+	* Run `bash install.sh`
+	* Make `~/.xinitrc` and add the following line:
+	  `exec bspwm`
