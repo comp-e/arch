@@ -1,5 +1,3 @@
-https://steamcommunity.com/id/bequicker
-
 # Dotfiles
 
 WMs: dwm, bspwm
